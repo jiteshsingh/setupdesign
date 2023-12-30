@@ -16,6 +16,7 @@
 
 package com.google.android.setupdesign.view;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -57,8 +58,8 @@ public class NavigationBar extends LinearLayout implements View.OnClickListener 
               R.attr.sudNavBarTheme, android.R.attr.colorForeground, android.R.attr.colorBackground
             });
     @StyleableRes int navBarTheme = 0;
-    @StyleableRes int colorForeground = 1;
-    @StyleableRes int colorBackground = 2;
+    @SuppressLint("ResourceType") @StyleableRes int colorForeground = 1;
+    @SuppressLint("ResourceType") @StyleableRes int colorBackground = 2;
     int theme = attributes.getResourceId(navBarTheme, 0);
     if (theme == 0) {
       // Compare the value of the foreground against the background color to see if current

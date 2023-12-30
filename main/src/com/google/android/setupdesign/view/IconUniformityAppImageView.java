@@ -16,6 +16,7 @@
 
 package com.google.android.setupdesign.view;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -36,6 +37,7 @@ import com.google.android.setupdesign.R;
 import com.google.android.setupdesign.widget.CardBackgroundDrawable;
 
 /** An ImageView that displays an app icon according to the icon uniformity spec. */
+@SuppressLint("AppCompatCustomView")
 public class IconUniformityAppImageView extends ImageView
     implements IconUniformityAppImageViewBindable {
   // Scaling factor for inset on each side of legacy icon.

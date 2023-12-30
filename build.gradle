@@ -16,14 +16,16 @@
  *      }
  */
 
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+}
 
 android {
-    compileSdkVersion 28
+    namespace 'com.google.android.setupdesign'
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 28
+        minSdk 34
     }
 
     buildTypes {
@@ -47,4 +49,9 @@ dependencies {
     implementation "androidx.annotation:annotation:1.0.0"
     implementation "androidx.recyclerview:recyclerview:1.0.0"
     implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.google.errorprone:error_prone_annotations:2.24.0'
+    implementation 'androidx.window:window:1.2.0'
+    implementation 'androidx.core:core:1.12.0'
+    implementation 'androidx.legacy:legacy-support-core-ui:1.0.0'
 }
