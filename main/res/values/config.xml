@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
     Copyright (C) 2015 The Android Open Source Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,11 +26,15 @@
     <bool name="suc_footer_bar_button_align_end">false</bool>
 
     <!-- Secondary font for use with headings, title, and other non-body text -->
-    <string name="sudFontSecondary" translatable="false">google-sans</string>
-    <string name="sudFontSecondaryText" translatable="false">google-sans-text</string>
-    <string name="sudFontSecondaryMedium" translatable="false">google-sans-medium</string>
+    <!--    <string name="sudFontSecondary" translatable="false">google-sans</string>-->
+    <string name="sudFontSecondary" translatable="false">sans-serif</string>
+    <!--    <string name="sudFontSecondaryText" translatable="false">google-sans-text</string>-->
+    <string name="sudFontSecondaryText" translatable="false">sans-serif</string>
+    <!--    <string name="sudFontSecondaryMedium" translatable="false">google-sans-medium</string>-->
+    <string name="sudFontSecondaryMedium" translatable="false">sans-serif</string>
     <!-- Material You button font family-->
-    <string name="sudFontSecondaryMediumMaterialYou" translatable="false">google-sans-text-medium</string>
+    <!--    <string name="sudFontSecondaryMediumMaterialYou" translatable="false">google-sans-text-medium</string>-->
+    <string name="sudFontSecondaryMediumMaterialYou" translatable="false">sans-serif</string>
     <item name="sud_layout_description" type="id" />
 
 </resources>
